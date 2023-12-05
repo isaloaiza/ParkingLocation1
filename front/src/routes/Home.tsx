@@ -3,7 +3,7 @@ import DefaultLayout from "../layout/DefaultLayout";
 import React , {useState, useEffect}from "react";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import TrackVisibility from 'react-on-screen';
-import { Skills } from "./skills";
+
 
 
 
@@ -63,8 +63,8 @@ export const Home = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Bienvenido Usuario</span>
                 <h1>{`Hola! Aventureros `} <span className="txt-rotate"  data-rotate='[ "Somos ParkingLocation" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  <p>¡Bienvenido a ParkingLocation! Encuentra, reserva y simplifica tu estacionamiento en segundos. Explora una variedad de parqueaderos cercanos, filtra por precios, horarios y servicios, todo para hacer tu vida más fácil. Simplifica tu rutina de estacionamiento con nosotros.</p>
+                  <button onClick={() => console.log('connect')}>Ver video <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
           </div>
@@ -79,7 +79,6 @@ export const Home = () => {
         </div>
       </div>
     </section>
-      <Skills />
     </DefaultLayout>
     </div>
   )
